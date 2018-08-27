@@ -1,0 +1,67 @@
+@layout("/common/_container.html"){
+<div class="ibox float-e-margins">
+    <div class="ibox-content">
+        <div class="form-horizontal">
+
+            <div class="row">
+                <div class="col-sm-6 b-r">
+                            <#input id="id" name="ID" underline="true"/>
+                            <#input id="period" name="第多少期" underline="true"/>
+                            <#input id="numOfPeople" name="参与人数" underline="true"/>
+                            <#input id="bigCount" name="大的统计" underline="true"/>
+                            <#input id="smallCount" name="小的统计" underline="true"/>
+                            <#input id="singleCount" name="单的统计" underline="true"/>
+                            <#input id="doubleCount" name="双的统计" underline="true"/>
+                            <#input id="bigSingleCount" name="大单的统计" underline="true"/>
+                            <#input id="bigDoubleCount" name="大双的统计" underline="true"/>
+                            <#input id="smallSingleCount" name="小单的统计" underline="true"/>
+                            <#input id="smallDoubleCount" name="小双的统计" underline="true"/>
+                            <#input id="coupletCount" name="对子的统计" underline="true"/>
+                            <#input id="alongCount" name="顺子的统计" underline="true"/>
+                            <#input id="leopardCount" name="豹子的统计" underline="true"/>
+                            <#input id="count0" name="0" underline="true"/>
+                            <#input id="count1" name="1" underline="true"/>
+                            <#input id="count2" name="2" underline="true"/>
+                            <#input id="count3" name="3" underline="true"/>
+                            <#input id="count4" name="4" underline="true"/>
+                            <#input id="count5" name="5" underline="true"/>
+                            <#input id="count6" name="6"/>
+                </div>
+
+                <div class="col-sm-6">
+                            <#input id="count7" name="7" underline="true"/>
+                            <#input id="count8" name="8" underline="true"/>
+                            <#input id="count9" name="9" underline="true"/>
+                            <#input id="count10" name="10" underline="true"/>
+                            <#input id="count11" name="11" underline="true"/>
+                            <#input id="count12" name="12" underline="true"/>
+                            <#input id="count13" name="13" underline="true"/>
+                            <#input id="count14" name="14" underline="true"/>
+                            <#input id="count15" name="15" underline="true"/>
+                            <#input id="count16" name="16" underline="true"/>
+                            <#input id="count17" name="17" underline="true"/>
+                            <#input id="count18" name="18" underline="true"/>
+                            <#input id="count19" name="19" underline="true"/>
+                            <#input id="count20" name="20" underline="true"/>
+                            <#input id="count21" name="21" underline="true"/>
+                            <#input id="count22" name="22" underline="true"/>
+                            <#input id="count23" name="23" underline="true"/>
+                            <#input id="count24" name="24" underline="true"/>
+                            <#input id="count25" name="25" underline="true"/>
+                            <#input id="count26" name="26" underline="true"/>
+                            <#input id="count27" name="27" underline="true"/>
+                </div>
+            </div>
+
+            <div class="row btn-group-m-t">
+                <div class="col-sm-10">
+                    <#button btnCss="info" name="提交" id="ensure" icon="fa-check" clickFun="TPeriodStatisticsInfoDlg.addSubmit()"/>
+                    <#button btnCss="danger" name="取消" id="cancel" icon="fa-eraser" clickFun="TPeriodStatisticsInfoDlg.close()"/>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="${ctxPath}/static/modular/system/tPeriodStatistics/tPeriodStatistics_info.js"></script>
+@}

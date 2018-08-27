@@ -1,0 +1,67 @@
+@layout("/common/_container.html"){
+<div class="ibox float-e-margins">
+    <div class="ibox-content">
+        <div class="form-horizontal">
+
+            <div class="row">
+                <div class="col-sm-6 b-r">
+                            <#input id="id" name="ID" underline="true"/>
+                            <#input id="period" name="第多少期" underline="true"/>
+                            <#input id="numOfPeople" name="参与人数" underline="true"/>
+                            <#input id="bigOdds" name="大的赔率" underline="true"/>
+                            <#input id="smallOdds" name="小的赔率" underline="true"/>
+                            <#input id="singleOdds" name="单的赔率" underline="true"/>
+                            <#input id="doubleOdds" name="双的赔率" underline="true"/>
+                            <#input id="bigSingleOdds" name="大单的赔率" underline="true"/>
+                            <#input id="bigDoubleOdds" name="大双的赔率" underline="true"/>
+                            <#input id="smallSingleOdds" name="小单的赔率" underline="true"/>
+                            <#input id="smallDoubleOdds" name="小双的赔率" underline="true"/>
+                            <#input id="coupletOdds" name="对子的赔率" underline="true"/>
+                            <#input id="alongOdds" name="顺子的赔率" underline="true"/>
+                            <#input id="leopardOdds" name="豹子的赔率" underline="true"/>
+                            <#input id="odds0" name="0" underline="true"/>
+                            <#input id="odds1" name="1" underline="true"/>
+                            <#input id="odds2" name="2" underline="true"/>
+                            <#input id="odds3" name="3" underline="true"/>
+                            <#input id="odds4" name="4" underline="true"/>
+                            <#input id="odds5" name="5" underline="true"/>
+                            <#input id="odds6" name="6"/>
+                </div>
+
+                <div class="col-sm-6">
+                            <#input id="odds7" name="7" underline="true"/>
+                            <#input id="odds8" name="8" underline="true"/>
+                            <#input id="odds9" name="9" underline="true"/>
+                            <#input id="odds10" name="10" underline="true"/>
+                            <#input id="odds11" name="11" underline="true"/>
+                            <#input id="odds12" name="12" underline="true"/>
+                            <#input id="odds13" name="13" underline="true"/>
+                            <#input id="odds14" name="14" underline="true"/>
+                            <#input id="odds15" name="15" underline="true"/>
+                            <#input id="odds16" name="16" underline="true"/>
+                            <#input id="odds17" name="17" underline="true"/>
+                            <#input id="odds18" name="18" underline="true"/>
+                            <#input id="odds19" name="19" underline="true"/>
+                            <#input id="odds20" name="20" underline="true"/>
+                            <#input id="odds21" name="21" underline="true"/>
+                            <#input id="odds22" name="22" underline="true"/>
+                            <#input id="odds23" name="23" underline="true"/>
+                            <#input id="odds24" name="24" underline="true"/>
+                            <#input id="odds25" name="25" underline="true"/>
+                            <#input id="odds26" name="26" underline="true"/>
+                            <#input id="odds27" name="27" underline="true"/>
+                </div>
+            </div>
+
+            <div class="row btn-group-m-t">
+                <div class="col-sm-10">
+                    <#button btnCss="info" name="提交" id="ensure" icon="fa-check" clickFun="TPeriodOddsInfoDlg.addSubmit()"/>
+                    <#button btnCss="danger" name="取消" id="cancel" icon="fa-eraser" clickFun="TPeriodOddsInfoDlg.close()"/>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="${ctxPath}/static/modular/system/tPeriodOdds/tPeriodOdds_info.js"></script>
+@}

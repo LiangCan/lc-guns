@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.stylefeng.guns.modular.system.dao.TUserHistoryStatisticsMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.stylefeng.guns.modular.system.model.TUserHistoryStatistics">
+        <id column="id" property="id" />
+        <result column="game_id" property="gameId" />
+        <result column="period" property="period" />
+        <result column="sum_count" property="sumCount" />
+        <result column="big_count" property="bigCount" />
+        <result column="small_count" property="smallCount" />
+        <result column="single_count" property="singleCount" />
+        <result column="double_count" property="doubleCount" />
+        <result column="big_single_count" property="bigSingleCount" />
+        <result column="big_double_count" property="bigDoubleCount" />
+        <result column="small_single_count" property="smallSingleCount" />
+        <result column="small_double_count" property="smallDoubleCount" />
+        <result column="couplet_count" property="coupletCount" />
+        <result column="along_count" property="alongCount" />
+        <result column="leopard_count" property="leopardCount" />
+        <result column="count_0" property="count0" />
+        <result column="count_1" property="count1" />
+        <result column="count_2" property="count2" />
+        <result column="count_3" property="count3" />
+        <result column="count_4" property="count4" />
+        <result column="count_5" property="count5" />
+        <result column="count_6" property="count6" />
+        <result column="count_7" property="count7" />
+        <result column="count_8" property="count8" />
+        <result column="count_9" property="count9" />
+        <result column="count_10" property="count10" />
+        <result column="count_11" property="count11" />
+        <result column="count_12" property="count12" />
+        <result column="count_13" property="count13" />
+        <result column="count_14" property="count14" />
+        <result column="count_15" property="count15" />
+        <result column="count_16" property="count16" />
+        <result column="count_17" property="count17" />
+        <result column="count_18" property="count18" />
+        <result column="count_19" property="count19" />
+        <result column="count_20" property="count20" />
+        <result column="count_21" property="count21" />
+        <result column="count_22" property="count22" />
+        <result column="count_23" property="count23" />
+        <result column="count_24" property="count24" />
+        <result column="count_25" property="count25" />
+        <result column="count_26" property="count26" />
+        <result column="count_27" property="count27" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, game_id, period, sum_count, big_count, small_count, single_count, double_count, big_single_count, big_double_count, small_single_count, small_double_count, couplet_count, along_count, leopard_count, count_0, count_1, count_2, count_3, count_4, count_5, count_6, count_7, count_8, count_9, count_10, count_11, count_12, count_13, count_14, count_15, count_16, count_17, count_18, count_19, count_20, count_21, count_22, count_23, count_24, count_25, count_26, count_27
+    </sql>
+
+</mapper>

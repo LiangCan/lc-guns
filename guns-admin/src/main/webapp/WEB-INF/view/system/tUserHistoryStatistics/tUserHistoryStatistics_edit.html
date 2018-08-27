@@ -1,0 +1,71 @@
+@layout("/common/_container.html"){
+<div class="ibox float-e-margins">
+    <div class="ibox-content">
+        <div class="form-horizontal">
+
+            <div class="row">
+                <div class="col-sm-6 b-r">
+                            <#input id="id" name="ID" value="${item.id}" underline="true"/>
+                            <#input id="gameId" name="游戏ID" value="${item.gameId}" underline="true"/>
+                            <#input id="period" name="第多少期" value="${item.period}" underline="true"/>
+                            <#input id="sumCount" name="总压" value="${item.sumCount}" underline="true"/>
+                            <#input id="bigCount" name="压大" value="${item.bigCount}" underline="true"/>
+                            <#input id="smallCount" name="压小" value="${item.smallCount}" underline="true"/>
+                            <#input id="singleCount" name="压单" value="${item.singleCount}" underline="true"/>
+                            <#input id="doubleCount" name="压双" value="${item.doubleCount}" underline="true"/>
+                            <#input id="bigSingleCount" name="压大单" value="${item.bigSingleCount}" underline="true"/>
+                            <#input id="bigDoubleCount" name="压大双" value="${item.bigDoubleCount}" underline="true"/>
+                            <#input id="smallSingleCount" name="压小单" value="${item.smallSingleCount}" underline="true"/>
+                            <#input id="smallDoubleCount" name="压小双" value="${item.smallDoubleCount}" underline="true"/>
+                            <#input id="coupletCount" name="压对子" value="${item.coupletCount}" underline="true"/>
+                            <#input id="alongCount" name="压顺子" value="${item.alongCount}" underline="true"/>
+                            <#input id="leopardCount" name="压豹子" value="${item.leopardCount}" underline="true"/>
+                            <#input id="userId" name="用户ID" value="${item.userId}" underline="true"/>
+                            <#input id="countSub" name="最终统计" value="${item.countSub}" underline="true"/>
+                            <#input id="count0" name="0" value="${item.count0}" underline="true"/>
+                            <#input id="count1" name="1" value="${item.count1}" underline="true"/>
+                            <#input id="count2" name="2" value="${item.count2}" underline="true"/>
+                            <#input id="count3" name="3" value="${item.count3}" underline="true"/>
+                            <#input id="count4" name="4" value="${item.count4}" underline="true"/>
+                            <#input id="count5" name="5" value="${item.count5}" underline="true"/>
+
+                </div>
+
+                <div class="col-sm-6">
+                            <#input id="count6" name="6" value="${item.count6}" />
+                            <#input id="count7" name="7" value="${item.count7}" underline="true"/>
+                            <#input id="count8" name="8" value="${item.count8}" underline="true"/>
+                            <#input id="count9" name="9" value="${item.count9}" underline="true"/>
+                            <#input id="count10" name="10" value="${item.count10}" underline="true"/>
+                            <#input id="count11" name="11" value="${item.count11}" underline="true"/>
+                            <#input id="count12" name="12" value="${item.count12}" underline="true"/>
+                            <#input id="count13" name="13" value="${item.count13}" underline="true"/>
+                            <#input id="count14" name="14" value="${item.count14}" underline="true"/>
+                            <#input id="count15" name="15" value="${item.count15}" underline="true"/>
+                            <#input id="count16" name="16" value="${item.count16}" underline="true"/>
+                            <#input id="count17" name="17" value="${item.count17}" underline="true"/>
+                            <#input id="count18" name="18" value="${item.count18}" underline="true"/>
+                            <#input id="count19" name="19" value="${item.count19}" underline="true"/>
+                            <#input id="count20" name="20" value="${item.count20}" underline="true"/>
+                            <#input id="count21" name="21" value="${item.count21}" underline="true"/>
+                            <#input id="count22" name="22" value="${item.count22}" underline="true"/>
+                            <#input id="count23" name="23" value="${item.count23}" underline="true"/>
+                            <#input id="count24" name="24" value="${item.count24}" underline="true"/>
+                            <#input id="count25" name="25" value="${item.count25}" underline="true"/>
+                            <#input id="count26" name="26" value="${item.count26}" underline="true"/>
+                            <#input id="count27" name="27" value="${item.count27}" />
+                </div>
+            </div>
+
+            <div class="row btn-group-m-t">
+                <div class="col-sm-10">
+                    <#button btnCss="info" name="提交" id="ensure" icon="fa-check" clickFun="TUserHistoryStatisticsInfoDlg.editSubmit()"/>
+                    <#button btnCss="danger" name="取消" id="cancel" icon="fa-eraser" clickFun="TUserHistoryStatisticsInfoDlg.close()"/>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="${ctxPath}/static/modular/system/tUserHistoryStatistics/tUserHistoryStatistics_info.js"></script>
+@}

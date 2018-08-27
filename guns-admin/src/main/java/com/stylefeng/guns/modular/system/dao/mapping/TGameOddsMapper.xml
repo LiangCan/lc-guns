@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.stylefeng.guns.modular.system.dao.TGameOddsMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.stylefeng.guns.modular.system.model.TGameOdds">
+        <id column="id" property="id" />
+        <result column="big_odds" property="bigOdds" />
+        <result column="small_odds" property="smallOdds" />
+        <result column="single_odds" property="singleOdds" />
+        <result column="double_odds" property="doubleOdds" />
+        <result column="big_single_odds" property="bigSingleOdds" />
+        <result column="big_double_odds" property="bigDoubleOdds" />
+        <result column="small_single_odds" property="smallSingleOdds" />
+        <result column="small_double_odds" property="smallDoubleOdds" />
+        <result column="couplet_odds" property="coupletOdds" />
+        <result column="along_odds" property="alongOdds" />
+        <result column="leopard_odds" property="leopardOdds" />
+        <result column="odds_0" property="odds0" />
+        <result column="odds_1" property="odds1" />
+        <result column="odds_2" property="odds2" />
+        <result column="odds_3" property="odds3" />
+        <result column="odds_4" property="odds4" />
+        <result column="odds_5" property="odds5" />
+        <result column="odds_6" property="odds6" />
+        <result column="odds_7" property="odds7" />
+        <result column="odds_8" property="odds8" />
+        <result column="odds_9" property="odds9" />
+        <result column="odds_10" property="odds10" />
+        <result column="odds_11" property="odds11" />
+        <result column="odds_12" property="odds12" />
+        <result column="odds_13" property="odds13" />
+        <result column="odds_14" property="odds14" />
+        <result column="odds_15" property="odds15" />
+        <result column="odds_16" property="odds16" />
+        <result column="odds_17" property="odds17" />
+        <result column="odds_18" property="odds18" />
+        <result column="odds_19" property="odds19" />
+        <result column="odds_20" property="odds20" />
+        <result column="odds_21" property="odds21" />
+        <result column="odds_22" property="odds22" />
+        <result column="odds_23" property="odds23" />
+        <result column="odds_24" property="odds24" />
+        <result column="odds_25" property="odds25" />
+        <result column="odds_26" property="odds26" />
+        <result column="odds_27" property="odds27" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, big_odds, small_odds, single_odds, double_odds, big_single_odds, big_double_odds, small_single_odds, small_double_odds, couplet_odds, along_odds, leopard_odds, odds_0, odds_1, odds_2, odds_3, odds_4, odds_5, odds_6, odds_7, odds_8, odds_9, odds_10, odds_11, odds_12, odds_13, odds_14, odds_15, odds_16, odds_17, odds_18, odds_19, odds_20, odds_21, odds_22, odds_23, odds_24, odds_25, odds_26, odds_27
+    </sql>
+
+</mapper>
