@@ -6,6 +6,7 @@
     <resultMap id="BaseResultMap" type="com.stylefeng.guns.modular.system.model.TPeriodOdds">
         <id column="id" property="id" />
         <result column="period" property="period" />
+        <result column="game_id" property="gameId" />
         <result column="num_of_people" property="numOfPeople" />
         <result column="big_odds" property="bigOdds" />
         <result column="small_odds" property="smallOdds" />
