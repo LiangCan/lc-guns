@@ -16,6 +16,7 @@ TPeriodOdds.initColumn = function () {
         {field: 'selectItem', radio: true},
             {title: 'ID', field: 'id', visible: true, align: 'center', valign: 'middle'},
             {title: '第多少期', field: 'period', visible: true, align: 'center', valign: 'middle'},
+            {title: '游戏ID', field: 'gameId', visible: true, align: 'center', valign: 'middle'},
             {title: '参与人数', field: 'numOfPeople', visible: true, align: 'center', valign: 'middle'},
             {title: '大的赔率', field: 'bigOdds', visible: true, align: 'center', valign: 'middle'},
             {title: '小的赔率', field: 'smallOdds', visible: true, align: 'center', valign: 'middle'},

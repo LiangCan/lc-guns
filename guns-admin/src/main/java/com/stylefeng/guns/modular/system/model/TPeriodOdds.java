@@ -25,7 +25,14 @@ public class TPeriodOdds extends Model<TPeriodOdds> {
     /**
      * 第多少期
      */
+    @TableField("period")
     private String period;
+
+    /**
+     * 游戏ID
+     */
+    @TableField("game_id")
+    private Long gameId;
     /**
      * 参与人数
      */
@@ -564,6 +571,14 @@ public class TPeriodOdds extends Model<TPeriodOdds> {
         this.odds27 = odds27;
     }
 
+    public Long getGameId() {
+        return gameId;
+    }
+
+    public void setGameId(Long gameId) {
+        this.gameId = gameId;
+    }
+
     @Override
     protected Serializable pkVal() {
         return this.id;
@@ -574,6 +589,7 @@ public class TPeriodOdds extends Model<TPeriodOdds> {
         return "TPeriodOdds{" +
         "id=" + id +
         ", period=" + period +
+        ", gameId=" + gameId +
         ", numOfPeople=" + numOfPeople +
         ", bigOdds=" + bigOdds +
         ", smallOdds=" + smallOdds +

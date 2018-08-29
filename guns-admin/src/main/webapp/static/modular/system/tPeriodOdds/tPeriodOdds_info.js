@@ -47,6 +47,7 @@ TPeriodOddsInfoDlg.collectData = function() {
     this
     .set('id')
     .set('period')
+    .set('gameId')
     .set('numOfPeople')
     .set('bigOdds')
     .set('smallOdds')
