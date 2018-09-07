@@ -1,6 +1,8 @@
 package com.stylefeng.guns.modular.system.controller;
 
 import com.stylefeng.guns.core.base.controller.BaseController;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -23,9 +25,17 @@ import com.stylefeng.guns.modular.system.service.ITGameOddsService;
 public class TGameOddsController extends BaseController {
 
     private String PREFIX = "/system/tGameOdds/";
-
+    private Logger log = LoggerFactory.getLogger(this.getClass());
     @Autowired
     private ITGameOddsService tGameOddsService;
+
+    /**
+     * 跳转到项目管理首页
+     */
+    @RequestMapping("/cp")
+    public String cpIndex() {
+        return PREFIX + "cpGame.html";
+    }
 
     /**
      * 跳转到项目管理首页
@@ -72,6 +82,14 @@ public class TGameOddsController extends BaseController {
         tGameOddsService.insert(tGameOdds);
         return SUCCESS_TIP;
     }
+
+    @RequestMapping(value = "/cpSubmit")
+    @ResponseBody
+    public Object cpSubmit(Integer number1,Integer number2,Integer number3) {
+        log.info("1" + number1 + "2"+ number2 + "3" + number3);
+        return SUCCESS_TIP;
+    }
+
 
     /**
      * 删除项目管理

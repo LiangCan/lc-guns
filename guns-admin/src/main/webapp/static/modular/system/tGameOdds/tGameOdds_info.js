@@ -5,6 +5,8 @@ var TGameOddsInfoDlg = {
     tGameOddsInfoData : {}
 };
 
+
+
 /**
  * 清除数据
  */
@@ -106,6 +108,25 @@ TGameOddsInfoDlg.addSubmit = function() {
     ajax.set(this.tGameOddsInfoData);
     ajax.start();
 }
+
+
+/**
+ * 操盘提交
+ */
+TGameOddsInfoDlg.cpSubmit = function() {
+
+    //提交信息
+    var ajax = new $ax(Feng.ctxPath + "/tGameOdds/cpSubmit", function(data){
+        Feng.success("提交成功!");
+
+    },function(data){
+        Feng.error("提交失败!" + data.responseJSON.message + "!");
+    });
+    ajax.set({"number1":"4","number2":"55","number3":"66"});
+    ajax.start();
+}
+
+
 
 /**
  * 提交修改

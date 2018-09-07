@@ -1,0 +1,38 @@
+@layout("/common/_container.html"){
+<div class="row">
+    <div class="col-sm-12">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>域名管理管理</h5>
+            </div>
+            <div class="ibox-content">
+                <div class="row row-lg">
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <#NameCon id="condition" name="名称" />
+                            </div>
+                            <div class="col-sm-3">
+                                <#button name="搜索" icon="fa-search" clickFun="TDomainName.search()"/>
+                            </div>
+                        </div>
+                        <div class="hidden-xs" id="TDomainNameTableToolbar" role="group">
+                            @if(shiro.hasPermission("/tDomainName/add")){
+                                <#button name="添加" icon="fa-plus" clickFun="TDomainName.openAddTDomainName()"/>
+                            @}
+                            @if(shiro.hasPermission("/tDomainName/update")){
+                                <#button name="修改" icon="fa-edit" clickFun="TDomainName.openTDomainNameDetail()" space="true"/>
+                            @}
+                            @if(shiro.hasPermission("/tDomainName/delete")){
+                                <#button name="删除" icon="fa-remove" clickFun="TDomainName.delete()" space="true"/>
+                            @}
+                        </div>
+                        <#table id="TDomainNameTable"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="${ctxPath}/static/modular/domain/tDomainName/tDomainName.js"></script>
+@}

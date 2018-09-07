@@ -1,0 +1,21 @@
+@layout("/common/_container.html"){
+<div class="row">
+    <div class="col-sm-12">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>操盘控制</h5>
+            </div>
+            <div class="ibox-content">
+                <div class="row row-lg">
+                    第一个数： <input name="number_1" size="10"/><br/>
+                    第二个数： <input name="number_2" size="10"/><br/>
+                    第三个数： <input name="number_3" size="10"/><br/>
+                    <#button btnCss="info" name="提交" id="ensure" icon="fa-check" clickFun="TGameOddsInfoDlg.cpSubmit()"/>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="${ctxPath}/static/modular/system/tGameOdds/tGameOdds_info.js"></script>
+@}
